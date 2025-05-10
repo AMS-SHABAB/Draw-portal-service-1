@@ -1,0 +1,84 @@
+function toggleDetails(button) {
+      const details = button.closest('.card').querySelector('.details');
+      const seeDetailsBtn = button;
+
+      if (details.style.display === 'none' || details.style.display === '') {
+        details.style.display = 'block';
+        seeDetailsBtn.innerText = 'Close';
+      } else {
+        details.style.display = 'none';
+        seeDetailsBtn.innerText = 'See Details';
+      }
+    }
+   <!--calculate-->
+
+function showCalculator(el) {
+
+  const style = el.dataset.style;
+
+  const price = el.dataset.price;
+
+  const category = el.dataset.category;
+
+  document.getElementById('modal-style').textContent = style;
+
+  document.getElementById('modal-style').dataset.price = price;
+
+  document.getElementById('modal-title').textContent = `${style} Calculator`;
+
+  // Reset form
+
+  document.getElementById('length').value = '';
+
+  document.getElementById('width').value = '';
+
+  document.getElementById('area').textContent = '0';
+
+  document.getElementById('price').textContent = 'tk0';
+
+  document.getElementById('outside').checked = false;
+
+      document.getElementById('calculator-modal').style.display = 'flex';
+
+    }
+ 
+  function calculatePrice() {
+      const length = parseFloat(document.getElementById('length').value) || 0;
+      const width = parseFloat(document.getElementById('width').value) || 0;
+      const area = length * width;
+      document.getElementById('area').textContent = area.toFixed(2);
+
+      const basePrice = document.getElementById('modal-style').dataset.price;
+      const [minStyle, maxStyle] = basePrice.includes('-') ? basePrice.split('-').map(Number) : [Number(basePrice), Number(basePrice)];
+      const productPrice = parseFloat(document.getElementById('product').value) || 0;
+      const isOutside = document.getElementById('outside').checked;
+
+      let minTotal = (minStyle + productPrice) * area;
+      let maxTotal = (maxStyle + productPrice) * area;
+
+      if (isOutside) {
+        minTotal *= 1.2;
+        maxTotal *= 1.2;
+      }
+
+      const finalPrice = (minStyle === maxStyle)
+        ? `tk ${minTotal.toFixed(0)}`
+        : `tk ${minTotal.toFixed(0)} - tk ${maxTotal.toFixed(0)}`;
+
+      document.getElementById('price').textContent = finalPrice;
+    }
+
+    function closeCalculator() {
+      document.getElementById('calculator-modal').style.display = 'none';
+    }
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('popup').style.display = 'flex';
+    }, 3000);
+  });
+  
+  const menu=document.getElementById("floatingMenu"),menuIcon=document.getElementById("menuIcon");function toggleMenu(){menu.classList.contains("open")?(menu.classList.remove("open"),menu.classList.add("closing"),menuIcon.innerHTML='<path d="M12 5v14m7-7H5" />',setTimeout(()=>{menu.classList.remove("closing")},400)):(menu.classList.add("open"),menuIcon.innerHTML='<path d="M18 6 6 18M6 6l12 12" />')}function toggleText(e){const t=e.querySelector("span")?.textContent.trim();if("Book"===t){const e=new Date().getHours();if(e<9||e>=18)return void alert("Booking is only available between 9 AM and 6 PM.")}document.querySelectorAll(".action-btn").forEach(t=>{t!==e&&t.classList.remove("show-text")}),e.classList.toggle("show-text")}
