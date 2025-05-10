@@ -3,6 +3,7 @@
 /* Universal base for all .btn */
 .btn {
   display: inline-block;
+  width: 60%;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   font-weight: 500;
@@ -18,24 +19,24 @@
 
 /* jt-btn-primary style */
 .jt-btn-primary {
-  background-color: #007bff;
+  background-color: #000;
   color: #fff;
 }
 
 .jt-btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #2f2f2f;
   box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
 }
 
 /* wall button style */
-.wall {
-  background-color: #f1f1f1;
-  color: #333;
+.wall btn {
+  background-color: #000;
+  color: #fff;
   border: 1px solid #ccc;
 }
 
-.wall:hover {
-  background-color: #e0e0e0;
+.wall btn:hover {
+  background-color: #fff;
   color: #000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
