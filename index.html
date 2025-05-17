@@ -440,6 +440,73 @@
     <button onclick="closePopup()">OK</button>
   </div>
 </div>
+<div class="fab-container" id="fab">
+    <div class="fab-menu">
+      <a href="#" class="fab-btn" id="booking-btn">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z" />
+        </svg>
+        Booking
+      </a>
+      <a href="https://livechat.example.com" class="fab-btn">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+        Live Chat
+      </a>
+      <a href="mailto:contact@example.com" class="fab-btn">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4z" /><path d="M22 4L12 14.01 2 4" />
+        </svg>
+        Contact
+      </a>
+    </div>
+    <div class="fab-main" id="fab-toggle">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M12 5v14m7-7H5" />
+      </svg>
+    </div>
+  </div>
+
+  <script>
+    const fab = document.getElementById('fab');
+    const fabToggle = document.getElementById('fab-toggle');
+    const bookingBtn = document.getElementById('booking-btn');
+
+    fabToggle.addEventListener('click', () => {
+      fab.classList.toggle('active');
+    });
+
+    function isBookingAllowed() {
+      const now = new Date();
+      const utcHour = now.getUTCHours();
+      const bangladeshHour = (utcHour + 6) % 24; // Bangladesh is UTC+6
+      return bangladeshHour < 20;
+    }
+
+    function updateBookingBtn() {
+      if (!isBookingAllowed()) {
+        bookingBtn.classList.add('closed');
+        bookingBtn.setAttribute('title', 'Booking unavailable after 8 PM BDT');
+      } else {
+        bookingBtn.classList.remove('closed');
+        bookingBtn.setAttribute('title', 'Click to book');
+      }
+    }
+
+    bookingBtn.addEventListener('click', (e) => {
+      if (!isBookingAllowed()) {
+        e.preventDefault();
+        alert('Booking is unavailable after 8 PM (BDT).');
+      } else {
+        window.location.href = 'https://booking.example.com';
+      }
+    });
+
+    updateBookingBtn();
+    setInterval(updateBookingBtn, 60000); // Update every minute
+  </script>
+
     <script src="script.js"></script>
 </body>
 </html>
