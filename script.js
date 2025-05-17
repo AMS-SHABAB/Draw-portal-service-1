@@ -1,4 +1,41 @@
- const hamburger = document.getElementById('hamburger');
+const fab = document.getElementById('fab');
+    const fabToggle = document.getElementById('fab-toggle');
+    const bookingBtn = document.getElementById('booking-btn');
+
+    fabToggle.addEventListener('click', () => {
+      fab.classList.toggle('active');
+    });
+
+    function isBookingAllowed() {
+      const now = new Date();
+      const utcHour = now.getUTCHours();
+      const bangladeshHour = (utcHour + 6) % 24; // Bangladesh is UTC+6
+      return bangladeshHour < 20;
+    }
+
+    function updateBookingBtn() {
+      if (!isBookingAllowed()) {
+        bookingBtn.classList.add('closed');
+        bookingBtn.setAttribute('title', 'Booking unavailable after 8 PM BDT');
+      } else {
+        bookingBtn.classList.remove('closed');
+        bookingBtn.setAttribute('title', 'Click to book');
+      }
+    }
+
+    bookingBtn.addEventListener('click', (e) => {
+      if (!isBookingAllowed()) {
+        e.preventDefault();
+        alert('Booking is unavailable after 8 PM (BDT).');
+      } else {
+        window.location.href = 'https://booking.example.com';
+      }
+    });
+
+    updateBookingBtn();
+    setInterval(updateBookingBtn, 60000); // Update every minute
+
+const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
     const navbar = document.getElementById('navbar');
 
