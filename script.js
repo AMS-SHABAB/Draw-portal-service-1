@@ -1,15 +1,16 @@
 function toggleDetails(button) {
-      const details = button.closest('.card').querySelector('.details');
-      const seeDetailsBtn = button;
+  const details = button.closest('.card').querySelector('.details');
+  const seeDetailsBtn = button;
 
-      if (details.style.display === 'none' || details.style.display === '') {
-        details.style.display = 'block';
-        seeDetailsBtn.innerText = 'Close';
-      } else {
-        details.style.display = 'none';
-        seeDetailsBtn.innerText = 'See Details';
-      }
-    }
+  if (details.style.display === 'none' || details.style.display === '') {
+    details.style.display = 'block';
+    seeDetailsBtn.innerText = '\u09AC\u09A8\u09CD\u09A7\u0020\u0995\u09B0\u09C1\u09A8'; // বন্ধ করুন
+  } else {
+    details.style.display = 'none';
+    seeDetailsBtn.innerText = '\u09AC\u09BF\u09B8\u09CD\u09A4\u09BE\u09B0\u09BF\u09A4\u0020\u09A6\u09C7\u0996\u09C1\u09A8'; // বিস্তারিত দেখুন
+  }
+}
+
    <!--calculate-->
 
 function showCalculator(el) {
