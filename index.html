@@ -36,6 +36,33 @@
       <a href="#">কাস্টমার কেয়ার</a>
     </div>
   </nav>
+ <style>
+    .responsive-img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Show desktop image by default */
+    .img-desktop {
+      display: block;
+    }
+
+    .img-mobile {
+      display: none;
+    }
+
+    /* On small screens (e.g., mobile) */
+    @media (max-width: 768px) {
+      .img-desktop {
+        display: none;
+      }
+      .img-mobile {
+        display: block;
+      }
+    }
+  </style>
+ <img src="IMG_20250518_005434.jpg" alt="Desktop Version" class="responsive-img img-desktop">
+  <img src="IMG_20250518_005417.jpg" alt="Mobile Version" class="responsive-img img-mobile">
 
   <!-- Hero Glass Card -->
 <div class="max-w-3xl w-full bg-[#e0e5ec] rounded-2xl p-6">
