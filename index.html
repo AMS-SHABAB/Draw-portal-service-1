@@ -1,14 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A basic GitHub Pages site" />
-  <title>Arshubra Services</title>
- <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canvas Hero</title>
+<link rel="stylesheet" href="style.css">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Lato&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+  
 </head>
 <body>
+
+  <!-- Animated SVG Background -->
+  <svg class="dp svg" preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+    <defs>
+      <style>
+        @keyframes rotate {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        .out-top {
+          animation: rotate 20s linear infinite;
+          transform-origin: 13px 25px;
+        }
+        .in-top {
+          animation: rotate 10s linear infinite;
+          transform-origin: 13px 25px;
+        }
+        .out-bottom {
+          animation: rotate 25s linear infinite;
+          transform-origin: 84px 93px;
+        }
+        .in-bottom {
+          animation: rotate 15s linear infinite;
+          transform-origin: 84px 93px;
+        }
+      </style>
+    </defs>
+    <path fill="#121212" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+    <path fill="#171717" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+    <path fill="#343434" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4,0.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+    <path fill="#010101" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+  </svg>
+
+  <!-- Link Section -->
+  <div class="links">
+    <a href="https://dev.to/uuuuuulala/making-background-blob-animation-in-just-15kb-step-by-step-guide-2482" target="_blank">
+      
+      <img class="icon" src="https://ksenia-k.com/img/icons/link.svg" alt="Link Icon">
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+  <div class="logo">
+  <img src="IMG_20250517_014037.png" alt="Canvas Logo" style="height: 40px;">
+
+</div>
+
+
+    <div class="nav-links">
+      <a href="#">পরিচিতি</a>
+      <a href="#">যোগাযোগ</a>
+      <a href="#">নীতিমালা</a>
+      <a href="#">কাস্টমার কেয়ার</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#">পরিচিতি</a>
+      <a href="#">যোগাযোগ</a>
+      <a href="#">নীতিমালা</a>
+      <a href="#">কাস্টমার কেয়ার</a>
+    </div>
+  </nav>
+
+  <!-- Hero Glass Card -->
+<div class="w-full hover-3d">
+    <!-- Mobile Image -->
+    <img 
+      src="Red White Bold Simple Fashion Introduction Poster_20250517_094512_0000.png" 
+      alt="Mobile Image" 
+      class="block md:hidden w-full object-cover" />
+<img 
+      src="IMG_20250517_021415.jpg" 
+      alt="Mobile Image" 
+      class="block md:hidden w-full object-cover" />
+
+    <!-- Desktop Image -->
+    <img 
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH746fs1A9tE7dZdShNeKFGxXPv5p1xBN0rVOpoXq3-XN14_4BFOhdae1bBmlTYarZzA541Xj4dlb86dzGbrVgST-B2z5K7qaVpxW7I9Q2Zzyf0l_GquLAWvLHxDR7O2rhW_1JiQLL3tGtmXoYNroK6LOsGrkb1c9AznOmSnIH0o9PAO0c-TKns9y6-fA/s2048/IMG_20250325_044721.jpg" 
+      alt="Desktop Image" 
+      class="hidden md:block w-full object-cover" />
+  </div>
 
 <!--Wall Art Section-->
   <section>
