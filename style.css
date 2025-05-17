@@ -11,12 +11,10 @@
 }
 
 :root {
-  --hover-glow: #333333; /* Dark violet glow */
-  --primary: rgba(0, 212, 255, 0.9);
-  --neumorph-bg: #e0e0e0;
-  --shadow-light: rgba(255, 255, 255, 0.6);
-  --shadow-dark: rgba(0, 0, 0, 0.2);
+  --hover-glow: #a0522d; /* Brown */
+  --primary: rgba(0,212,255,0.9);
 }
+
 
 * {
   margin: 0;
@@ -153,6 +151,7 @@ a img.icon {
 }
 
 /* Mobile nav with Neumorphism */
+
 .mobile-nav {
   display: none;
   flex-direction: column;
@@ -161,16 +160,18 @@ a img.icon {
   top: 100%;
   right: 0;
   width: 100%;
-  padding: 20px;
-  background: var(--neumorph-bg);
+  padding: 20px 0;
+  background: #f0f0f0;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   animation: flipIn 0.6s ease forwards;
-  box-shadow: 8px 8px 16px var(--shadow-dark),
-              -8px -8px 16px var(--shadow-light);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1),
+              -4px -4px 12px rgba(255, 255, 255, 0.6);
 }
+
+
 
 .mobile-nav.show {
   display: flex;
@@ -180,26 +181,23 @@ a img.icon {
   color: #000;
   text-decoration: none;
   padding: 12px 0;
-  margin: 6px 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 12px;
-  background: var(--neumorph-bg);
-  box-shadow: inset 2px 2px 4px var(--shadow-dark),
-              inset -2px -2px 4px var(--shadow-light);
-  transition: 0.3s;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav a:first-child {
+  border-top: none;
 }
 
 .mobile-nav a:hover {
   color: var(--hover-glow);
-  text-shadow: 0 0 6px var(--hover-glow);
-  box-shadow: inset 4px 4px 6px var(--shadow-dark),
-              inset -4px -4px 6px var(--shadow-light),
-              0 0 10px var(--hover-glow);
+  text-shadow: 0 0 8px var(--hover-glow);
 }
+
 
 /* Animation for mobile menu */
 @keyframes flipIn {
