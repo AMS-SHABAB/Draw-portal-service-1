@@ -1,9 +1,4 @@
-.wall-painting-section {
-  position: relative;
-  z-index: 1;
-}
-  
-  /* Apply z-index: 1 to all text elements */
+/* Apply z-index: 1 to all text elements */
 p, h1, h2, h3, h4, h5, h6, span, a, li, dt, dd, blockquote, strong, em, label, small, cite, q, b, i, u, mark {
   position: relative;
   z-index: 1;
