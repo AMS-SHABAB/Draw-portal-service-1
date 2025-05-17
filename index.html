@@ -1,190 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wall Painting Services</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
- 
 <!--Wall Art Section-->
   <section>
     <h2><svg aria-hidden="true" class="jt-icon"><use xlink:href="#i-drawportal"></use></svg> Wall Art Styles</h2>
     <p>এখানে বিভিন্ন ক্যাটাগরি অনুসারে ওয়াল পেইন্টিং করার স্টাইল সাজানো হয়েছে। এক এক স্টাইলের ধরন একেক রকম। প্রত্যেকটি ক্যাটাগরি এর ক্যাটালগ লিংক দিয়ে দেওয়া হয়েছে।</p>
     <p>সেই সাথে আছে আপনার দেয়ালের এরিয়া এর সাইজ অনুসারে কত টাকা আসতে পারে সেটা দেখার কিংবা হিসাব করার সুযোগ। আপনি আপনার পছন্দের স্টাইল এর ক্ষেত্রে কত টাকা খরচ করতে পারবেন সেটি নিজে দেখে নিতে পারবেন।</p>
     <div class="card" data-category="wall-art" data-price="55-300" data-style="cubism">
-      Cubism: <span class="price-range">৳55-300/sqft</span> <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+      Cubism: <span class="price-range">৳55-300/sqft</span> <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
 
       <div class="details">
         <p class="description">এটা একটা আঁকা-আকির ধরন। মূলত বিভিন্ন জ্যামিতিক আকৃতি অনুসারে এটা আঁকা হয়। নিচে এর ক্যাটালগ দেখতে ক্লিক করুন। এক্ষেত্রে ব্যাকগ্রাউন্ড এর কাজ যতটুক প্রয়োজন ততটুকু করা হয়। </p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="55-300" data-style="Cubism" onclick="showCalculator(this)">See Price - Cubism</button>
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="55-300" data-style="Cubism" onclick="showCalculator(this)">প্রাইস দেখুন </button>
              <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="350-1200" data-style="abstract">
       Abstract: <span class="price-range">৳350-1200/sqft</span>
-  <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>      <div class="details">
+      <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>   
+      <div class="details">
         <p class="description">বিভিন্ন রং আকৃতি সংমিশ্রণ করে অদ্ভুত এবং নান্দনিক ভাবে কোন একটি বিষয়বস্তু ফুটিয়ে তোলা হয় এই ধরনের মাধ্যমে। এটাও একটা আঁকা আঁকির ধরন। এক্ষেত্রে ব্যাকগ্রাউন্ডয়ের কাজ করা হয়। নিচে এর catalog দেখতে ক্লিক করুন।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-       <button class="wall-calculator-btn btn-blue" data-category="wall-art" data-price="350-1200" data-style="abstract" onclick="showCalculator(this)">Abstract</button>
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+       <button class="wall-calculator-btn btn-blue" data-category="wall-art" data-price="350-1200" data-style="abstract" onclick="showCalculator(this)">প্রাইস দেখুন </button>
          <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="55-300" data-style="minimalism">
       Minimalism: <span class="price-range">৳55-300/sqft</span>
- <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+  <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">নরমাল ভাবে হালকা পাতলা ডিজাইনের মধ্যে যে ধরনের আর্ট করা হয়, এটা হল সেই স্টাইল। এই স্টাইলে যে কোন বিষয় সহজভাবে কম সময়ে কম খরচে ফুটিয়ে তোলা হয়। কোন ধরনের ডিটেইলিং থাকেনা। দেখতে সুন্দর লাগে স্মার্ট লাগে। এক্ষেত্রে কোন ব্যাকগ্রাউন্ড এর কাজ করা হয় না। নিচে এর ক্যাটালগ দেওয়া হল।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-  <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="55-300" data-style="Minimalism" onclick="showCalculator(this)">See Price - Minimalism</button>
+        
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+  <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="55-300" data-style="Minimalism" onclick="showCalculator(this)">প্রাইস দেখুন </button>
            <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="20-100" data-style="line-art">
       Line Art: <span class="price-range">৳20-100/sqft</span>
-   <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+   <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">শুধুমাত্র লাইনের মাধ্যমে আর্ট করা হয়। এক কালার রং ব্যবহার করা হয়। অনেকগুলো রং ব্যবহার করা যেতে পারে সমস্যা নেই। ব্যাকগ্রাউন্ড এর কোন কাজ করা হয় না নিচে এর ক্যাটালগ দেওয়া হল।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-  <button class="wall-calculator-btn btn-blue" data-category="wall-art" data-price="20-100" data-style="Line Art" onclick="showCalculator(this)">See Price - Line Art</button>
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+  <button class="wall-calculator-btn btn-blue" data-category="wall-art" data-price="20-100" data-style="Line Art" onclick="showCalculator(this)">প্রাইস দেখুন </button>
            <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="55-300" data-style="geometric-art">
       Geometric Art: <span class="price-range">৳55-300/sqft</span>
- <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+ <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">বিভিন্ন জ্যামিতিক আকার আকৃতির মাধ্যমে ড্রইং করা হয়। দেখতে অদ্ভুত ইউনিক লাগে। অনেক সময় ব্যাকগ্রাউন্ডের কাজ করা হয় অনেক সময় করা হয় না। নিচের ক্যাটালগ দেখতে ক্লিক করুন।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-<button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="55-300" data-style="Geometric Art" onclick="showCalculator(this)">See Price - Geometric Art</button>
+    
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+<button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="55-300" data-style="Geometric Art" onclick="showCalculator(this)">প্রাইস দেখুন </button>
            <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="350-1200" data-style="pointillism">
       Pointillism: <span class="price-range">৳350-1200/sqft</span>
-     <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+      <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">শুধুমাত্র ফোটা দিয়ে দিয়ে সম্পূর্ণ একটি ড্রইং করা হয় এই মাধ্যমে। দেখতে রিয়েলাইসটিক লাগে। সম্পূর্ণ ব্যাকগ্রাউন্ডয়ের কাজ করা হয়। সময় সাপেক্ষ কাজ খরচ অনেক। দেখতেও গর্জিয়াস লাগে। ক্যাটালগ দেখতে নিচে ক্লিক করুন।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="350-1200" data-style="Pointillism" onclick="showCalculator(this)">See Price - Pointillism</button>
+ 
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="350-1200" data-style="Pointillism" onclick="showCalculator(this)">প্রাইস দেখুন </button>
            <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="55-300" data-style="ukiyo-e-art">
       Ukiyo-e Art: <span class="price-range">৳55-300/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+       <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">এটা জাপানের একটি ট্রেডিশনাল আর্ট। যেখানে মূলত কার্টুন আকৃতির ড্রইং করা হয়। বলতে গেলে টুডি ভার্সনে ড্রইং করা হয়। মোটামুটি দেখতে সিম্পল সহজ হয়। অনেক সময় ব্যাকগ্রাউন্ডয়ের কাজ করা হয় অনেক সময় করা হয় না। নির্ভর করে বিষয়বস্তুর উপর। নিচে এর ক্যাটালগ দেখতে ক্লিক করুন।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="55-300" data-style="Ukiyo-e Art" onclick="showCalculator(this)">See Price - Ukiyo-e Art</button>
+
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="55-300" data-style="Ukiyo-e Art" onclick="showCalculator(this)">প্রাইস দেখুন </button>
            <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="350-1200" data-style="realism">
       Realism: <span class="price-range">৳350-1200/sqft</span>
-  <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+   <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">কোন একটি বিষয়বস্তু ৮০ থেকে ৯০ শতাংশ হুবহু করে আকার চেষ্টাই হল এই মাধ্যম। এই মাধ্যমে কোন একটি বিষয়বস্তুকে হুবহু আকার চেষ্টা করা হয়। যাতে দেখতে রিয়েল্সটিক লাগে। অর্থাৎ আপনার মনে হবে এটা বাস্তব কোনো একটা দৃশ্য। এ ধরনের কাজ অনেক সময় সাপেক্ষ ব্যাপার এবং অনেক জটিল। অনেক সময় ব্যাকগ্রাউন্ডের কাজ করা হয় অনেক সময় করা হয় না। নির্ভর করে বিষয়বস্তুর উপর। নিচে এর ক্যাটালগ দেওয়া হলো।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-  <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="350-1200" data-style="Realism" onclick="showCalculator(this)">See Price - Realism</button>
+
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+  <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="350-1200" data-style="Realism" onclick="showCalculator(this)">প্রাইস দেখুন </button>
            <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="150" data-style="pop-art">
       Pop Art: <span class="price-range">৳150/sqft</span>
-  <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+   <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">বিভিন্ন দেশের কালচার সংস্কৃতি ইত্যাদি কিংবা কোন প্রোডাক্ট বিজ্ঞাপন সম্পর্কিত টুডি রিয়েলাইস্টিক ভার্সনে আঁকা হয় এই পদ্ধতিতে। দেখতে রঙিন বিষয়বস্তু স্পষ্ট বোঝা যায় সেই সাথে ব্যাকগ্রাউন্ড এর কাজ প্রয়োজন মত করা হয়। মিডিয়াম খরচের মধ্যে সম্পূর্ণ আর্ডওয়ার্ক কাবারাপ হয়ে যায়।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-      <button class="wall-calculator-btn btn-blue" data-category="wall-art" data-price="150" data-style="Pop Art" onclick="showCalculator(this)">See Price - Pop Art</button>
+
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+      <button class="wall-calculator-btn btn-blue" data-category="wall-art" data-price="150" data-style="Pop Art" onclick="showCalculator(this)">প্রাইস দেখুন </button>
            <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="350-1200" data-style="modern-art">
       Modern Art: <span class="price-range">৳350-1200/sqft</span>
-    <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+     <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">কোন ধরনের নিয়ম-কানুন এক্ষেত্রে অনুসরণ করা হয় না। বিভিন্ন পদ্ধতি সংমিশ্রণ করে এই ড্রয়িং করা হয়। অনেক সময় বিষয়বস্তু বিভিন্ন বস্তুর সাথে তুলনা করে আঁকা হয়। একটি চিত্রকর্মের অনেকগুলো বিষয়বস্তু এক্ষেত্রে হতে পারে। </p>
          <p class="description">সহজ ভাষায় বলতে গেলে, কোন একটি বিষয় বিভিন্ন উপমা এর সাহায্যে যৌথ পদ্ধতির সংমিশ্রণে এই ড্রয়িং তৈরি করা হয়। অর্থাৎ আপনার বিষয়বস্তু বিভিন্ন কল্পনা জগতের মাধ্যমে ফুটিয়ে তোলা হবে। যেমন একটি গাড়ি সেটিকে সহজ ভাবে না এঁকে, বিভিন্ন রং এর ছড়াছড়ি করে এর অবয়ব আঁকা হবে। এটা গাড়ি মানুষ বুঝতে পারবে কিন্তু এটা দেখতে গাড়ির মত হবে না অনেক অর্থ বোঝাবে।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn ntn-red" data-category="wall-art" data-price="350-1200" data-style="Modern Art" onclick="showCalculator(this)">See Price - Modern Art</button>
+
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn ntn-red" data-category="wall-art" data-price="350-1200" data-style="Modern Art" onclick="showCalculator(this)">প্রাইস দেখুন </button>
            <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="55-300" data-style="graffiti">
       Graffiti: <span class="price-range">৳55-300/sqft</span>
-  <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+   <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">বিভিন্ন লেখার সাহায্যে কোন ধরনের বিজ্ঞাপন ড্রইং করাই হলো এই পদ্ধতি। এই পদ্ধতিতে বিভিন্ন লেখালেখির সাহায্যে বিভিন্ন বিষয়বস্তু উপস্থাপন করা হয়। অনেক সময় ডিটেইলিং করা হয় এবং প্রয়োজন মতে ব্যাকগ্রাউন্ডের কাজ করা হয়।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-      <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="55-300" data-style="Graffiti" onclick="showCalculator(this)">See Price - Graffiti</button>
+ 
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+      <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="55-300" data-style="Graffiti" onclick="showCalculator(this)">প্রাইস দেখুন </button>
                   <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="30-1200" data-style="figurative">
       Figurative: <span class="price-range">৳30-1200/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+       <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">বিভিন্ন পশু-পাখি বা জীবন আছে এমন সম্বলিত ড্রইং এই পদ্ধতিতে করা হয়. এই পদ্ধতিতে চেষ্টা করা হয় প্রত্যেকটি প্রাণীকে বাস্তবে ফুটিয়ে তোলার। প্রয়োজন অনুসারে ব্যাকগ্রাউন্ড দের কাজ করা হয়।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="30-1200" data-style="Figurative" onclick="showCalculator(this)">See Price - Figurative</button>
+ 
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="30-1200" data-style="Figurative" onclick="showCalculator(this)">প্রাইস দেখুন </button>
                   <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="55-300" data-style="folk-art">
       Folk Art: <span class="price-range">৳55-300/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+      <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">ট্র্যাডিশনাল এবং প্রাচীন ড্রয়িং পদ্ধতিতে বিভিন্ন বিষয়বস্তু বিভিন্ন রঙিন নকশা এবং ফুল পাতা ইত্যাদির সাহায্যে ফুটিয়ে তোলায় হল এই পদ্ধতির কাজ। আপনি যদি খাঁটি বাঙ্গালীর ছোঁয়া আনতে চান তাহলে এই পদ্ধতিতে কাজ করিয়ে  নিতে পারেন।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-       <button class="wall-calculator-btn btn-blie" data-category="wall-art" data-price="55-300" data-style="Folk Art" onclick="showCalculator(this)">See Price - Folk Art</button>
+  
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+       <button class="wall-calculator-btn btn-blie" data-category="wall-art" data-price="55-300" data-style="Folk Art" onclick="showCalculator(this)">প্রাইস দেখুন </button>
                   <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="350-1200" data-style="ancient-art">
       Ancient Art: <span class="price-range">৳350-1200/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+       <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">বিভিন্ন ইতিহাস বাস্তবে ফুটিয়ে তোলা হলো এই পদ্ধতির কাজ। যেখানে অতিরিক্ত বিভিন্ন ধরনের রং ব্যবহার করা হয় না চেষ্টা করা হয় প্রাচীনতম ভাব নিয়ে আসতে। যাতে দেখতে প্রাচীন লাগে। ব্যাকগ্রাউন্ড এর কাজ করা হয়।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="350-1200" data-style="Ancient Art" onclick="showCalculator(this)">See Price - Ancient Art</button>
+ 
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="350-1200" data-style="Ancient Art" onclick="showCalculator(this)">প্রাইস দেখুন </button>
                   <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="450-1700" data-style="contemporary">
       Contemporary: <span class="price-range">৳450-1700/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+       <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">বিভিন্ন রং ও যন্ত্রপাতির সাহায্যে কিংবা ডেকোরেশনের সাহায্যে এই ড্রইং করা হয়। অর্থাৎ ইন্টেরিয়র ডিজাইন এবং পেইন্টিং সংমিশ্রণ করে এর পদ্ধতি তৈরি করা হয়েছে। যেখানে মূলত নান্দনিক আইডিয়া নিয়ে কাজ করা হয়। আপনার যদি কোন কনসেপ্ট থাকে এবং সেটিকে ফুটিয়ে তুলতে চান তাহলে এই পদ্ধতিতে কাজ করাতে পারেন।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-<button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="450-1700" data-style="Contemporary" onclick="showCalculator(this)">See Price - Contemporary</button>
+   
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+<button class="wall-calculator-btn btn-red" data-category="wall-art" data-price="450-1700" data-style="Contemporary" onclick="showCalculator(this)">প্রাইস দেখুন </button>
                   <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
 
     <div class="card" data-category="wall-art" data-price="55-300" data-style="fantasy">
       Fantasy: <span class="price-range">৳55-300/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+       <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">ছোট বাচ্চাদের জন্য কার্টুন থেকে শুরু করে বিভিন্ন কল্পনা জগতের বিষয়বস্তু ফুটিয়ে তোলা হলো এই পদ্ধতির কাজ। যেখানে কোন লজিক থাকে না শুধুমাত্র দেখতে আনন্দময় এবং সুন্দর লাগে। </p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-    <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="55-300" data-style="Fantasy" onclick="showCalculator(this)">See Price - Fantasy</button>
+  
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+    <button class="wall-calculator-btn btn-yellow" data-category="wall-art" data-price="55-300" data-style="Fantasy" onclick="showCalculator(this)">প্রাইস দেখুন </button>
                   <p class="description">সার্ভিস বুকিং করতে বাম সাইডে থাকা যোগ বাটনে ক্লিক করুন। সেখানে আপনি প্রথম বাটনটিতে ক্লিক করে বুকিং প্রসেস সম্পন্ন  করতে পারবেন।</p>
       </div>
     </div>
@@ -196,60 +200,65 @@
 
     <div class="card" data-category="wall-craft" data-price="30" data-style="cement-craft-normal">
       Cement Craft Normal: <span class="price-range">৳30/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+       <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">নরমাল ভাবে, সহজ সুন্দর হালকা-পাতলা ডিজাইনের মধ্যে এই ক্রাফট করা হয়। যেমন চাঁদ ফুল পাখি পাতা ইত্যাদি। </p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn" data-category="wall-craft" data-price="30" data-style="Cement Craft Normal" onclick="showCalculator(this)">See Price - Cement Craft Normal</button>
+  
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn" data-category="wall-craft" data-price="30" data-style="Cement Craft Normal" onclick="showCalculator(this)">প্রাইস দেখুন </button>
       </div>
     </div>
 
     <div class="card" data-category="wall-craft" data-price="70" data-style="cement-craft-detail">
       Cement Craft Detail: <span class="price-range">৳70/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+       <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">এক্ষেত্রে যেই ক্রাফ্ট করা হয় সেটা অনেক নিখুঁতভাবে করা হয়। যাতে দেখতে রিয়েলএস্টিক লাগে।.</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn" data-category="wall-craft" data-price="70" data-style="Cement Craft Detail" onclick="showCalculator(this)">See Price - Cement Craft Detail</button>
+ 
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn" data-category="wall-craft" data-price="70" data-style="Cement Craft Detail" onclick="showCalculator(this)">প্রাইস দেখুন </button>
       </div>
     </div>
 
     <div class="card" data-category="wall-craft" data-price="130" data-style="cement-craft-detail-color">
       Cement Craft Detail Color: <span class="price-range">৳130/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+      <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">এক্ষেত্রে ক্রাফ্ট করার পর সেটাকে রংয়ের মাধ্যমে ফুটিয়ে তোলা হয় যেগুলো অন্যান্য মাধ্যমে করা হয় না।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn" data-category="wall-craft" data-price="130" data-style="Cement Craft Detail Color" onclick="showCalculator(this)">See Price - Cement Craft Detail Color</button>
+  
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn" data-category="wall-craft" data-price="130" data-style="Cement Craft Detail Color" onclick="showCalculator(this)">প্রাইস দেখুন </button>
       </div>
     </div>
 
     <div class="card" data-category="wall-craft" data-price="40" data-style="gypsum-craft-normal">
       Gypsum Craft Normal: <span class="price-range">৳40/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+      <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">জিপসাম পাউডার ব্যবহার করে এই কাজ করা হয় কিন্তু নরমাল হালকা পাতলা ডিজাইন এর মধ্যে।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn" data-category="wall-craft" data-price="40" data-style="Gypsum Craft Normal" onclick="showCalculator(this)">See Price - Gypsum Craft Normal</button>
+  
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn" data-category="wall-craft" data-price="40" data-style="Gypsum Craft Normal" onclick="showCalculator(this)">প্রাইস দেখুন </button>
       </div>
     </div>
 
     <div class="card" data-category="wall-craft" data-price="80" data-style="gypsum-craft-detail">
       Gypsum Craft Detail: <span class="price-range">৳80/sqft</span>
-      <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+      <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
       <div class="details">
         <p class="description">জিপসাম পাউডার ব্যবহার করে নিখুঁতভাবে এই পদ্ধতিতে ক্রাফট করা হয়। কোন ধরনের রংয়ের কাজ করা হয় না। শুধুমাত্র হোয়াইট পলিশ ব্যবহার করা হয়।</p>
-        <a class="wallbtn" href="#">View Catalogue</a>
-        <button class="wall-calculator-btn" data-category="wall-craft" data-price="80" data-style="Gypsum Craft Detail" onclick="showCalculator(this)">See Price - Gypsum Craft Detail</button>
+   
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+        <button class="wall-calculator-btn" data-category="wall-craft" data-price="80" data-style="Gypsum Craft Detail" onclick="showCalculator(this)">প্রাইস দেখুন </button>
     </div>
       </div>
 <div class="card" data-category="wall-craft" data-price="150" data-style="gypsum-craft-detail-color">
   Gypsum Craft Detail Color: <span class="price-range">৳150/sqft</span>
-<a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+ <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
   <div class="details">
     <p class="description">জিপসাম পাউডার এবং রং ব্যবহার করে রঙ্গিন ক্রাফট এই পদ্ধতিতে ফুটিয়ে তোলা হয়।</p>
     <a class="wallbtn" href="#">View Catalogue</a>
-<button class="wall-calculator-btn" data-category="wall-craft" data-price="150" data-style="Gypsum Craft Premium" onclick="showCalculator(this)">See Price - Gypsum Craft Premium</button>
+<button class="wall-calculator-btn" data-category="wall-craft" data-price="150" data-style="Gypsum Craft Premium" onclick="showCalculator(this)">প্রাইস দেখুন </button>
   </div>
 </div>
 <!--🧱 Wall Recovery Section-->
@@ -258,57 +267,44 @@
 
   <div class="card" data-category="wall-recovery" data-price="80" data-style="Wall Repaint">
     Wall Repaint: <span class="price-range">৳80/sqft</span>
-    <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+     <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
     <div class="details">
-      <p class="description">Standard wall repainting for a fresh look.</p>
-      <a class="wallbtn" href="#">View Catalogue</a>
- <button class="wall-calculator-btn" data-category="wall-recovery" data-price="80" data-style="Wall Repaint" onclick="showCalculator(this)">
-
-  See Price - Wall Repaint
-
-</button>
+      <p class="description">মেরামত করা ছাড়াই শুধুমাত্র নতুন করে রং করে দেওয়া। শুধুমাত্র পুরাতন রং তুলে নতুন রং করে দেওয়া হবে। </p>
+    
+        <a class="wallbtn" href="#">নমুনা দেখুন</a>
+ <button class="wall-calculator-btn" data-category="wall-recovery" data-price="80" data-style="Wall Repaint" onclick="showCalculator(this)">প্রাইস দেখুন </button>
     </div>
   </div>
 
   <div class="card" data-category="wall-recovery" data-price="150" data-style="Wall Dam Recovery">
     Wall Dam Recovery: <span class="price-range">৳150/sqft</span>
-    <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+     <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
     <div class="details">
-      <p class="description">Repair and recovery of wall damage before repainting.</p>
-      <a class="wallbtn" href="#">View Catalogue</a>
- <button class="wall-calculator-btn" data-category="wall-recovery" data-price="150" data-style="Wall Dam Recovery" onclick="showCalculator(this)">
-
-  See Price - Wall Dam Recovery
-
-</button>
+      <p class="description">পুনরায় রঙ করার আগে দেয়ালের ক্ষতি মেরামত এবং পুনরুদ্ধার।</p>
+      
+        <a class="wallbtn" href="#">ক্যাটালগ দেখুন</a>
+ <button class="wall-calculator-btn" data-category="wall-recovery" data-price="150" data-style="Wall Dam Recovery" onclick="showCalculator(this)">প্রাইস দেখুন </button>
     </div>
   </div>
 
   <div class="card" data-category="wall-recovery" data-price="50" data-style="Wall Paint Straight">
     Wall Paint Straight: <span class="price-range">৳50/sqft</span>
-<a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+ <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
     <div class="details">
-      <p class="description">Straightforward painting without recovery services.</p>
-      <a class="wallbtn" href="#">View Catalogue</a>
- <button class="wall-calculator-btn" data-category="wall-recovery" data-price="50" data-style="Wall Paint Straight" onclick="showCalculator(this)">
-
-  See Price - Wall Paint Straight
-
-</button>
+      <p class="description">পুনরুদ্ধার পরিষেবা ছাড়াই সরাসরি পেইন্টিং।</p>
+      
+ <button class="wall-calculator-btn" data-category="wall-recovery" data-price="50" data-style="Wall Paint Straight" onclick="showCalculator(this)">প্রাইস দেখুন </button>
     </div>
   </div>
 
   <div class="card" data-category="wall-recovery" data-price="230" data-style="Wall Clean, Wash, Recovery, and Paint">
     Wall Clean, Wash, Recovery, and Paint: <span class="price-range">৳230/sqft</span>
-    <a class="btn rounded-pill jt-btn-primary mb-2 me-2" onclick="toggleDetails(this)">see details</a>
+     <button class="btn-neumorphic" onclick="toggleDetails(this)">বিস্তারিত</button>
     <div class="details">
-      <p class="description">Complete cleaning, recovery, and painting service.</p>
-      <a class="wallbtn" href="#">View Catalogue</a>
- <button class="wall-calculator-btn" data-category="wall-recovery" data-price="280" data-style="Full Wall Recovery Package" onclick="showCalculator(this)">
-
-  See Price - Full Wall Recovery Package
-
-</button>
+      <p class="description">একটি পুরাতন দেওয়াল সম্পূর্ণ পরিষ্কার মেরামত করে নতুন করে রং করে দেওয়া হবে।</p>
+     
+        <a class="wallbtn" href="#">নমুনা দেখুন</a>
+ <button class="wall-calculator-btn" data-category="wall-recovery" data-price="280" data-style="Full Wall Recovery Package" onclick="showCalculator(this)">প্রাইস দেখুন </button>
     </div>
   </div>
 </section>
@@ -317,39 +313,39 @@
   <div id="calculator-modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeCalculator()">X</button>
-      <h2 id="modal-title">Calculator</h2>
-      <p><strong>Style:</strong> <span data-price="" id="modal-style"></span></p>
+      <h2 id="modal-title">ক্যালকুলেটর</h2>
+      <p><strong>অঙ্কনের ধরন:</strong> <span data-price="" id="modal-style"></span></p>
 
-      <label>Length (ft):</label>
+      <label>দৈর্ঘ্য (ফুট):</label>
       <input id="length" oninput="calculatePrice()" type="number" />
 
-      <label>Width (ft):</label>
+      <label>প্রস্থ (ফুট):</label>
       <input id="width" oninput="calculatePrice()" type="number" />
 
-      <label>Service Area:</label>
-      <input id="outside" onchange="calculatePrice()" type="checkbox" /> Outside Chittagong
+      <label>ঠিকানা:</label>
+      <input id="outside" onchange="calculatePrice()" type="checkbox" /> চট্টগ্রামের বাইরে
 
-      <label>Product:</label>
+      <label>প্রোডাক্ট:</label>
       <select id="product" onchange="calculatePrice()">
         <optgroup class="art-options" label="Art Products" style="display: none;">
-          <option value="0">No Product</option>
-          <option value="40">Normal Product for art</option>
-          <option value="160">Premium Product for art</option>
+          <option value="0">প্রোডাক্ট আপনার নিজের</option>
+          <option value="40"> নরমাল প্রোডাক্ট ড্রইং এর জন্য</option>
+          <option value="160">প্রিমিয়াম প্রোডাক্ট ড্রইং এর জন্য </option>
         </optgroup>
         
         <optgroup class="craft-options" label="Craft Products" style="display: none;">
-          <option value="100">Normal Product for craft</option>
-          <option value="260">Premium Product for craft</option>
-          <option value="360">Exclusive Product (all included)</option>
+          <option value="100">নরমাল প্রোডাক্ট ক্রাফট এর জন্য </option>
+          <option value="260">প্রিমিয়াম প্রোডাক্ট এর জন্য</option>
+          <option value="360">এক্সক্লুসিভ প্রোডাক্ট প্যাকেজ (সবকিছু অন্তর্ভুক্ত)</option>
         </optgroup>
         
         <optgroup class="recovery-options" label="Recovery Products" style="display: none;">
-          <option value="0">No Product (wall recovery)</option>
+          <option value="0"> দেয়াল মেরামতের জন্য প্রোডাক্ট not available </option>
         </optgroup>
       </select>
 
-      <p>Area: <span id="area">0</span> sqft</p><p>
-      </p><p>Total Price: <span id="price">tk0</span></p>
+      <p>মোট বর্গফুট: <span id="area">0</span> বর্গফুট</p><p>
+      </p><p>মোট খরচ: <span id="price">৳0</span></p>
     <p></p><p></p></div>
   </div>
 
@@ -366,8 +362,3 @@
     <button onclick="closePopup()">OK</button>
   </div>
 </div>
-
-<div class="floating-menu" id="floatingMenu"><div class="actions" id="actions"><a href="tel:+8801820716529"><button class="action-btn" onclick="toggleText(this)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="3" x2="16" y2="7" stroke-linecap="round"/><line x1="8" y1="3" x2="8" y2="7" stroke-linecap="round"/><line x1="3" y1="11" x2="21" y2="11" stroke-linecap="round"/><rect x="11" y="14" width="2" height="2" fill="currentColor"/></svg><span>Book</span></button></a><a href="https://wa.me/01820716529"><button class="action-btn" onclick="toggleText(this)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2a10 10 0 0 0-8.94 14.32L2 22l5.69-1.98A10 10 0 1 0 12 2z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.71 9.16c-.28-.6-.57-.59-.84-.6h-.41a.71.71 0 0 0-.54.25c-.24.25-.75.73-.75 1.78s.77 2.33.87 2.49c.1.15 1.47 2.34 3.58 3.28.5.21.88.34 1.17.43.5.16.95.14 1.32.08.4-.06 1.19-.48 1.36-.93.17-.45.17-.83.12-.92s-.19-.13-.4-.23-1.25-.61-1.45-.67-.34-.1-.49.1c-.15.21-.54.67-.66.81s-.24.16-.44.05a5.76 5.76 0 0 1-1.72-1.06 6.53 6.53 0 0 1-1.2-1.5c-.12-.22-.01-.32.09-.42.1-.1.2-.23.3-.34s.14-.21.21-.35c.07-.15.03-.26-.02-.37l-.62-1.48z" stroke-linecap="round" stroke-linejoin="round"/></svg><span>WhatsApp</span></button></a><a href="https://drawportal.blogspot.com/p/chat.html"><button class="action-btn" onclick="toggleText(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C6.48 2 2 6.26 2 11c0 2.37 1.02 4.52 2.71 6.05L4 22l3.92-2.06c1.16.32 2.4.49 3.68.49 5.52 0 10-4.26 10-9s-4.48-9-10-9zm-1 6h2v2h-2V8zm0 4h2v6h-2v-6z"/></svg><span>Chat</span></button></a></div><button class="menu-btn" onclick="toggleMenu()"><svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 5v14m7-7H5"/></svg></button></div>
-  <script src="script.js"></script>
-</body>
-</html>
