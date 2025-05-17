@@ -46,11 +46,11 @@ a img.icon {
     html, body {
       height: 100%;
       font-family: 'Noto Sans Bengali', sans-serif;
-      color: #fff;
+      color: #000;
     }
 
     body {
-        background-color: #0d0d0d;
+        background-color: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -88,7 +88,7 @@ a img.icon {
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
-      color: #fff;
+      color: #000;
     }
     .nav-links a {
       color: inherit;
@@ -108,7 +108,7 @@ a img.icon {
     .nav-links svg {
       width: 16px;
       height: 16px;
-      fill: currentColor;
+      fill: #000;
       transition: all 0.4s ease;
     }
 
